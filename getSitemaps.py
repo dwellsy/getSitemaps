@@ -19,7 +19,6 @@ def save_file(url, folder, filename):
         r = requests.get(url, allow_redirects=False, verify=False)
         with open(out_filename, "wb") as f:
             f.write(r.content)
-
     else:
         with open(out_filename, "wb") as f:
             f.write(r.content)
